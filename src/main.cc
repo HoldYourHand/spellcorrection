@@ -21,7 +21,7 @@ void onClose(const wd::TcpConnectionPtr & conn);
 int main()
 {
 	//读取配置文件
-	std::string filepath = "/home/luo/project/spellcorrection4/conf/my.conf";
+	std::string filepath = "/home/luo/project/spellcorrection5/conf/my.conf";
 	MyConf myconf(filepath);
 	bool initFlag = myconf.init();
 	if(initFlag)
@@ -29,7 +29,7 @@ int main()
 		myconf.show();
 	}
 
-	std::map<std::string, std::string> &myMap = myconf.get_map();
+	std::map<std::string, std::string> &myMap = myconf.getMap();
 	std::string dictpath = myMap["my_dict"];	
 	std::string dictpath2 = myMap["my_cn_dict"];
 	MyDict *pMydict = MyDict::createInstance(dictpath.c_str(), dictpath2.c_str());

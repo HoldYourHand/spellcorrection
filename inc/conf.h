@@ -6,6 +6,9 @@
 #include <sstream>
 #include <map>
 
+///
+///  配置文件类
+///
 class MyConf
 {
 public:
@@ -13,7 +16,7 @@ public:
 
 	bool init();
 
-	std::map<std::string, std::string> &get_map()
+	std::map<std::string, std::string> &getMap()
 	{
 		return map_;
 	}
