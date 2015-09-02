@@ -2,7 +2,7 @@ add_subdirectory(net)
 add_subdirectory(threadpool)
 
 set(MAIN_SRCS_LIST
-	conf.cc
+	MyConf.cc
 	main.cc
 	MyDict.cc)
 

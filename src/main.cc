@@ -2,7 +2,7 @@
 #include "ThreadPool.h"
 #include "Task.h"
 #include "TcpServer.h"
-#include "conf.h"
+#include "MyConf.h"
 #include "MyDict.h"
 #include "Cache.h"
 #include "MyTimerThread.h"
